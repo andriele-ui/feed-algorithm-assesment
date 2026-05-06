@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', async function() {
   
   // Fetch tokens.json to validate token
   try {
-    const response = await fetch('/data/tokens.json');
+    const response = await fetch('data/tokens.json');
     const tokensData = await response.json();
     
     if (tokensData[token]) {
       // Valid token, redirect to eval page
-      window.location.href = `/evals/${token}/`;
+      window.location.href = `evals/${token}/`;
     } else {
       // Invalid token, show error
       showError(`Token inválido: "${token}". Verifique o link compartilhado.`);
@@ -56,7 +56,7 @@ function showError(message) {
       <div style="text-align: center; background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 40px; max-width: 400px;">
         <h1 style="color: #856404; margin-top: 0;">⚠️ Erro</h1>
         <p style="color: #856404; font-size: 16px;">${message}</p>
-        <button onclick="window.location.href='/';" style="background: #ffc107; border: none; color: #333; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold;">Voltar</button>
+        <button onclick="window.location.href=window.location.href.split('#')[0];" style="background: #ffc107; border: none; color: #333; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold;">Voltar</button>
       </div>
     </div>
   `;
