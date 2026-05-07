@@ -2,6 +2,8 @@
     <!DOCTYPE html>
     <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             /* Vertical layout: stack cards in a column */
             body { 
@@ -40,8 +42,26 @@
             .info { padding: 15px; text-align: center; }
             a { color: #0066cc; text-decoration: none; font-weight: bold; font-size: 18px; }
         </style>
+        <link rel="stylesheet" href="../assets/style.css">
     </head>
-    <body>
+    <body class="eval-version-page">
+
+    <button class="evaluation-mobile-open" type="button" aria-controls="evaluation-panel-v1" aria-expanded="false">Abrir formulario</button>
+
+    <aside class="evaluation-panel" id="evaluation-panel-v1" aria-label="Formulario de avaliacao V1">
+        <div class="evaluation-panel__inner">
+            <button class="evaluation-mobile-close" type="button">Fechar formulario</button>
+            <div class="evaluation-language-links" aria-label="Survey language options">
+                <a href="https://www.surveymonkey.com/r/J38ZZ5W?id=8481278" target="evaluation-frame-v1">English</a>
+                <a href="https://www.surveymonkey.com/r/J38ZZ5W?id=8481278&amp;lang=pt" target="evaluation-frame-v1">Portugues</a>
+                <a href="https://www.surveymonkey.com/r/J38ZZ5W?id=8481278&amp;lang=es" target="evaluation-frame-v1">Espanol</a>
+            </div>
+            <iframe class="evaluation-panel__frame" name="evaluation-frame-v1" src="https://www.surveymonkey.com/r/J38ZZ5W?id=8481278" title="Formulario de avaliacao V1" loading="lazy" width="580" height="3050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </aside>
+
+<main class="feed-content">
+
     
         <div class="card">
             <div class="thumb-container">
@@ -330,4 +350,6 @@
                 <a href="https://web.gameram.com/post/4447847" target="_blank">https://web.gameram.com/post/4447847</a>
             </div>
         </div>
-        </body></html>
+            </main>
+    <script src="../assets/eval-form-modal.js"></script>
+</body></html>
