@@ -182,35 +182,35 @@ body.eval-version-page {
   min-height: 100%;
 }
 
-.evaluation-language-links {
+.evaluation-version-next {
   display: flex;
-  gap: 8px;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 10px 12px;
   border-bottom: 1px solid #e5e7eb;
   background: #ffffff;
 }
 
-.evaluation-language-links a {
+.evaluation-version-next__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 34px;
-  padding: 0 12px;
-  border: 1px solid #d1d5db;
+  width: 100%;
+  max-width: 280px;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 0;
   border-radius: 999px;
-  color: #111827;
-  background: #ffffff;
+  color: #ffffff;
+  background: #111827;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
+  text-align: center;
   text-decoration: none;
 }
 
-.evaluation-language-links a:hover {
-  background: #f3f4f6;
+.evaluation-version-next__link:hover {
+  background: #374151;
   text-decoration: none;
 }
 
@@ -233,6 +233,60 @@ body.eval-version-page {
 
 body.eval-version-page .card {
   width: min(960px, 100%) !important;
+}
+
+.version-progress {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: min(960px, 100%);
+  padding: 12px;
+  border: 1px solid #dfe4ec;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 20px rgba(23, 37, 84, 0.08);
+}
+
+.version-progress__label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.version-progress__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  color: #111827;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.version-progress__link:hover {
+  background: #f3f4f6;
+  text-decoration: none;
+}
+
+.version-progress__link--primary {
+  border-color: #111827;
+  color: #ffffff;
+  background: #111827;
+}
+
+.version-progress__link--primary:hover {
+  background: #374151;
 }
 
 @media (max-width: 900px) {
@@ -317,5 +371,9 @@ body.eval-version-page .card {
 
   .feed-content {
     padding: 24px 14px 88px;
+  }
+
+  .version-progress {
+    top: 10px;
   }
 }
