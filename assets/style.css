@@ -120,11 +120,11 @@ body {
 /* Responsive */
 @media (max-width: 600px) {
   .eval-container {
-    padding: 20px 15px;
+    padding: 16px 12px;
   }
   
   .eval-header {
-    padding: 25px;
+    padding: 24px;
   }
   
   .eval-header h1 {
@@ -371,6 +371,25 @@ body.eval-version-page .card {
 
   .feed-content {
     padding: 24px 14px 88px;
+  }
+
+  /* Mobile-friendly feed cards and body spacing */
+  body.eval-version-page {
+    padding: 0 !important;
+  }
+
+  body.eval-version-page .feed-content {
+    padding: 20px 12px 88px !important;
+  }
+
+  body.eval-version-page .card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body.eval-version-page .thumb-container {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .version-progress {
