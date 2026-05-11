@@ -314,26 +314,10 @@ body.eval-version-page .card {
 
 @media (max-width: 900px) {
   .evaluation-mobile-open {
-    position: fixed;
-    right: 16px;
-    bottom: 16px;
-    z-index: 40;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    padding: 0 18px;
-    border: 0;
-    border-radius: 999px;
-    background: #111827;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1;
-    box-shadow: 0 14px 30px rgba(17, 24, 39, 0.28);
+    display: none; /* Hide floating open form button on mobile */
   }
   .version-progress__button {
-    display: none; /* Hide duplicate Open form button on mobile */
+    display: inline-flex;
   }
   body.eval-version-page {
     display: flex !important;
