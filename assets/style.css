@@ -226,7 +226,6 @@ body.eval-version-page {
   transform-origin: initial !important;
 }
 
-.evaluation-mobile-open,
 .evaluation-mobile-close {
   display: none;
 }
@@ -289,16 +288,31 @@ body.eval-version-page .card {
   background: #374151;
 }
 
+.version-progress__button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.version-progress__button:hover {
+  background: #f3f4f6;
+}
+
+.evaluation-mobile-open {
+  display: none;
+}
+
 @media (max-width: 900px) {
-  body.eval-version-page {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  body.eval-version-page.eval-form-open {
-    overflow: hidden;
-  }
-
   .evaluation-mobile-open {
     position: fixed;
     right: 16px;
@@ -317,6 +331,17 @@ body.eval-version-page .card {
     font-weight: 700;
     line-height: 1;
     box-shadow: 0 14px 30px rgba(17, 24, 39, 0.28);
+  }
+  .version-progress__button {
+    display: inline-flex;
+  }
+  body.eval-version-page {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  body.eval-version-page.eval-form-open {
+    overflow: hidden;
   }
 
   body.eval-version-page.eval-form-open .evaluation-mobile-open {

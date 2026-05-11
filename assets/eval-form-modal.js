@@ -96,6 +96,15 @@ document.addEventListener("DOMContentLoaded", function () {
   next.textContent = nextText;
   nav.appendChild(next);
 
+  var openNavButton = document.createElement("button");
+  openNavButton.className = "version-progress__button";
+  openNavButton.type = "button";
+  openNavButton.textContent = "Open form";
+  openNavButton.addEventListener("click", function () {
+    setOpen(true);
+  });
+  nav.appendChild(openNavButton);
+
   feedContent.insertBefore(nav, feedContent.firstElementChild);
 
   var panelFrame = panel.querySelector(".evaluation-panel__frame");
