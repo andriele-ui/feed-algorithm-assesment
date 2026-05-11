@@ -333,7 +333,7 @@ body.eval-version-page .card {
     box-shadow: 0 14px 30px rgba(17, 24, 39, 0.28);
   }
   .version-progress__button {
-    display: inline-flex;
+    display: none; /* Hide duplicate Open form button on mobile */
   }
   body.eval-version-page {
     display: flex !important;
